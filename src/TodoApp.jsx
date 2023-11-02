@@ -7,12 +7,12 @@ export const TodoApp = () => {
 
     const inicialState = [
         {
-            id: new Date().getDate,
+            id: new Date().getTime(),
             description: 'Recoletar la gema del alma',
             done: false
         },
         {
-            id: new Date().getDate * 2,
+            id: new Date().getTime() * 2,
             description: 'Recoletar la gema del poder',
             done: false
         }
@@ -21,7 +21,7 @@ export const TodoApp = () => {
     //pasamos el todo reducer que acabamos de crear todoreducer.js
     const [ todos, dispatch ] = useReducer(todoReducer, inicialState)
     const handlenewTodo = (todo) => {
-        console.log(todo)
+        console.log('la data',todo)
     }
 
     return (
