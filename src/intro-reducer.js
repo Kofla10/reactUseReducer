@@ -3,7 +3,6 @@ const iniciatState = [{
     todo: 'Recoletctar la piedra del alma',
     donde: false,
 }]
-console.log('ca')
 
 //this's a function reducer
 //el useReducer siempre recive un estado y una accion
